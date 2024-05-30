@@ -1,0 +1,17 @@
+@media screen and (min-width: 700px) and (max-width: 1025px) {
+  .card.one {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item.c-two {
+    img {
+      transform: scale(0.9);
+    }
+  }
+  .row {
+    p {
+      font-size: 30px;
+    }
+  }
+}

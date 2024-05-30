@@ -1,6 +1,9 @@
 @use 'fonts';
 
+
 @import 'main'; 
+@import 'media';
+
 
 html {
   margin: 0;
@@ -63,4 +66,6 @@ a {
 }
 .fa-xl,.fa-lg {
   line-height: 0;
-} 
+}
+
+

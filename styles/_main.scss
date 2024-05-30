@@ -4,12 +4,16 @@
 $main-color: #FFFFFF;
 $secondary-color: #5474FD;
 $third-color: #333333;
+$fourth-color: #232323;
+
+
 
 .container {
   display: flex;
   flex-direction: column;
 }
-.card.one {
+
+.header {
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(1, 1fr);
@@ -85,34 +89,39 @@ h2 {
   border: 2px solid $main-color;
   text-transform: uppercase;
   font-family: fonts.$secondary-txt-font;
-  color: $main-color;
   letter-spacing: 1.4px;
+}
+i {
+  padding-left: 5px;
 }
 .btn.scroll {
   border: none;
   background-color: transparent;
   font-family: fonts.$main-txt-font;
-  color: $main-color;
   letter-spacing: 2.8px;
 }
 }
 
 
-.card.two {
-  display: flex;
+.card.one {
+  display: grid;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   height: 685px;
   width: 100%;
   background-image: url(../images/Image2.png);
 
-.paragraphs {
+.item.c-one {
+  grid-column: 5 / 6;
+  grid-row: 1 / 2;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   height: 342px;
-  max-width: 560px;
+  width: 560px;
 
 
 }
@@ -124,6 +133,8 @@ p {
   letter-spacing: 1.6px;
 }
 .imgs {
+  grid-column: 7 / 8;
+  grid-row: 1 / 2;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -144,10 +155,288 @@ p {
     grid-row: 2 / 3;
   }
 }
-.btn.explore {
+
+}
+
+
+
+.card.two {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  align-items: center;
+
+  height: 340px;
+  width: 100%;
+  background-color: $third-color;
+  p {
+    font-family: fonts.$secondary-txt-font;
+    color: fonts.$secondary-font-color;
+    text-align: center;
+    font-size: 36px;
+    line-height: 26px;
+    margin: 0px;
+    width: 245px;
+  }
+  .item.c-two {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: max-content;
+    width: 1005px;
+    margin-top: 18px;
+  }
+}
+
+
+
+.card.three {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+  height: 700px;
+  width: 100%;
+  background-image: url(../images/Image5.png);
+
+  .txt.c-three {
+    margin: 30px;
+  }
+  h5 {
+    font-family: fonts.$main-txt-font;
+    color: fonts.$secondary-font-color;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px; /* 130% */
+    letter-spacing: 1.5px;
+    margin: 0px;
+    margin-bottom: 23px;
+  }
+  h4 {
+    color: fonts.$main-font-color;
+    font-family: fonts.$main-txt-font;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 130% */
+    text-transform: uppercase;
+    margin: 0px;
+    margin-bottom: 13px;
+  }
+  p {
+    width: 508px;
+    color: fonts.$secondary-font-color;
+    font-family: fonts.$main-txt-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    margin: 0px;  
+  }
+  .btn {
+    margin: 16px 30px
+  }
+
+.item.c-three {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 543px;
+  height: 374px;
+  background: #232323e6;
+}  
+}
+
+.card.four {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+  height: 700px;
+  width: 100%;
+  background-image: url(../images/Image6.png);
+
+  .txt.c-four {
+    margin: 30px;
+  }
+  h5 {
+    font-family: fonts.$main-txt-font;
+    color: fonts.$secondary-font-color;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px; /* 130% */
+    letter-spacing: 1.5px;
+    margin: 0px;
+    margin-bottom: 23px;
+  }
+  h4 {
+    color: fonts.$main-font-color;
+    font-family: fonts.$main-txt-font;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 130% */
+    text-transform: uppercase;
+    margin: 0px;
+    margin-bottom: 13px;
+  }
+  p {
+    width: 508px;
+    color: fonts.$secondary-font-color;
+    font-family: fonts.$main-txt-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    margin: 0px;  
+  }
+  .btn {
+    margin: 16px 30px
+  }
+
+.item.c-four {
+  grid-column: 4 / 5;
+  grid-row: 3 / 4; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 543px;
+  height: 374px;
+  background: #232323e6;
+}  
+}
+
+.card.five {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
+  height: 731px;
+  width: 100%;
+  background-image: url(../images/Image7.png);
+
+  .item.c-five {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 581px;
+    width: 1110px;
+    height: 287px;
+    background: #333;
+  }
+  .txt.c-five {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 581px;
+    margin-right: 25px;
+  }
+  h5 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3; 
+    color: fonts.$main-font-color;
+    text-align: center;
+    font-family: fonts.$secondary-txt-font;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 72.222% */
+    margin: 0px;
+  }
+  h6 {
+    align-self: flex-start;
+    color: #FEFEFE;
+    font-family: fonts.$main-txt-font;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 130% */
+    text-transform: uppercase;
+    margin: 0px;
+  }
+  p {
+    width: 581px;
+    color: fonts.$secondary-font-color;
+    font-family: fonts.$main-txt-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0px;
+    
+  }
+  .fa-solid.fa-quote-left {
+    font-size: 36px;
+    line-height: 26px;
+    margin: 8px 8px 0px 0px;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 271px;
+  background: $fourth-color;
+  
+
+  h3 {
+    color: fonts.$main-font-color;
+    font-family: fonts.$main-txt-font;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 108.333% */
+    letter-spacing: 3.36px;
+    text-transform: uppercase;
+    margin: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+  p {
+    color: fonts.$main-font-color;
+    text-align: center;
+    font-family: fonts.$main-txt-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: 1.6px;
+  }
+  .nav.footer {
+    margin-top: 13px;
+    padding: 0px;
+  }
+  .nav.list {
+    display: flex;
+    width: 166px;
+    justify-content: space-between;
+    margin: 0px;  
+    padding: 0px;
+  }
+  a {
+    padding: 0px;
+  }
+}
+
+.btn.general {
   height: 63px;
   width: 228px;
-  background: $secondary-color;
+  background: linear-gradient(77deg, #496BFE 37.84%, $secondary-color 37.84%);
   border: none;
   text-transform: uppercase;
   font-size: 16px;
@@ -155,36 +444,23 @@ p {
   margin: 0px;
   padding: 0px;
 }
+.btn, button, a {
+  color: fonts.$main-font-color;
 }
+i.fa-brands {
+  color: fonts.$secondary-font-color;
 
-
-
-.card.three {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 340px;
-  width: 100%;
-  background-color: $third-color;
-
-
-
-
-
+  &.fa-linkedin-in {
+    color: $secondary-color;
+  }
 }
-p {
-  text-align: center;
-  font-size: 36px;
-  line-height: 26px;
-  color: $secondary-font-color;
+.btn:hover, button:hover, a:hover {
+  color: #192147;
 }
-.row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+i.fa-brands:hover {
+  color: $secondary-color;
+
+  &.fa-linkedin-in:hover {
+    color: fonts.$secondary-font-color;
+  }  
 }
-.icons {
-  display: flex;
-} 
