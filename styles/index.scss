@@ -1,0 +1,66 @@
+@use 'fonts';
+
+@import 'main';
+
+html {
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: fonts.$main-txt-font;
+  color: fonts.$main-font-color;
+  vertical-align: middle;
+}
+input, input::placeholder {
+  color: fonts.$placeholder-font-color;
+  font-family: fonts.$main-txt-font;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+}
+h1, h2, h3, h4, input {
+  line-height: normal;
+  margin: 0;
+}
+h1, h2, h3, a {
+  text-transform: uppercase;
+}
+h1 {
+  font-family: fonts.$main-txt-font;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 4.8px;
+}
+h2 {
+  font-family: fonts.$secondary-txt-font;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 2.4px;
+}
+h3 {
+  font-family: fonts.$main-txt-font;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2.4px;
+  padding-right: 24px;
+}
+h4 {
+  font-family: fonts.$main-txt-font;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 6.82px;
+}
+ul, a {
+  list-style: none;
+  text-decoration: none;
+}
+li {
+  width: max-content;
+}
+a {
+  color: fonts.$main-font-color;
+  font-family: fonts.$secondary-txt-font;
+  font-size: 14px;
+  padding-right: 14px;
+}
+.fa-xl,.fa-lg {
+  line-height: 0;
+}
