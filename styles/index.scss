@@ -1,6 +1,6 @@
 @use 'fonts';
 
-@import 'main';
+@import 'main'; 
 
 html {
   margin: 0;
@@ -20,7 +20,7 @@ h1, h2, h3, h4, input {
   line-height: normal;
   margin: 0;
 }
-h1, h2, h3, a {
+h1, h3, a {
   text-transform: uppercase;
 }
 h1 {
@@ -63,4 +63,4 @@ a {
 }
 .fa-xl,.fa-lg {
   line-height: 0;
-}
+} 
